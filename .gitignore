@@ -30,3 +30,6 @@
 *.exe
 *.out
 *.app
+*.json
+basic/int
+basic/try

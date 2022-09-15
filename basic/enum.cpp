@@ -27,26 +27,32 @@ static const char *result_message[] =
         "serverFail(ip null)", 
         "serverFail(device type null)"};
 
-int getCodeForEnum( int enum_val )
+int resultCode( int enum_val )
 {
     int tmp(result_code[enum_val]);
     return tmp;
 }
 
-string getMessageForEnum( int enum_val )
+string resultMessage( int enum_val )
 {
     string tmp(result_message[enum_val]);
     return tmp;
 }
 
+const char resultMessage2( int enum_val )
+{
+    const char tmp(result_message[enum_val]);
+    return tmp;
+}
+
 int main(){
-	cout << getCodeForEnum(UNKNOWN) << endl;
-	cout << getMessageForEnum(UNKNOWN) << endl;
-	cout << getCodeForEnum(SERVERFAIL_UNKNOWN) << endl;
-	cout << getMessageForEnum(SERVERFAIL_UNKNOWN) << endl;
-	cout << getCodeForEnum(SERVERFAIL_IP_NULL) << endl;
-	cout << getMessageForEnum(SERVERFAIL_IP_NULL) << endl;
-	cout << getCodeForEnum(SERVERFAIL_DEVICE_TYPE_NULL) << endl;
-	cout << getMessageForEnum(SERVERFAIL_DEVICE_TYPE_NULL) << endl;
+	cout << resultCode(UNKNOWN) << endl;
+	cout << resultMessage(UNKNOWN) << endl;
+	cout << resultCode(SERVERFAIL_UNKNOWN) << endl;
+	cout << resultMessage(SERVERFAIL_UNKNOWN) << endl;
+	cout << resultCode(SERVERFAIL_IP_NULL) << endl;
+	cout << resultMessage(SERVERFAIL_IP_NULL) << endl;
+	cout << resultCode(SERVERFAIL_DEVICE_TYPE_NULL) << endl;
+	cout << resultMessage(SERVERFAIL_DEVICE_TYPE_NULL) << endl;
 	return 0;
 }
