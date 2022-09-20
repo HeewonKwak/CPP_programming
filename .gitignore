@@ -31,7 +31,9 @@
 *.out
 *.app
 *.json
-basic/[^\.]*
+# basic/[^\.]*
+basic/*
+basic/!*.*
 basic/int
 basic/try
 basic/cpp_version_check
