@@ -33,3 +33,4 @@
 *.json
 basic/int
 basic/try
+basic/cpp_version_check
