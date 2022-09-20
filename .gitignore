@@ -34,3 +34,6 @@
 basic/int
 basic/try
 basic/cpp_version_check
+basic/double
+basic/func
+basic/mutex_example1
